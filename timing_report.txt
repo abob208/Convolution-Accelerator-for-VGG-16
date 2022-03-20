@@ -1,0 +1,122 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : TOP
+Version: H-2013.03-SP5
+Date   : Sun Dec 26 15:16:09 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: adder_tree1/temp9_2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: adder_tree1/total_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                tsmc090_wl10          slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  adder_tree1/temp9_2_reg[0]/CK (DFFQXL)                  0.00 #     0.00 r
+  adder_tree1/temp9_2_reg[0]/Q (DFFQXL)                   0.39       0.39 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/A[0] (Adder_tree_0_DW01_add_7)
+                                                          0.00       0.39 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1/Y (AND2X2)
+                                                          0.19       0.58 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_1/CO (ADDFX1)
+                                                          0.25       0.83 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_2/CO (ADDFX1)
+                                                          0.27       1.09 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_3/CO (ADDFX1)
+                                                          0.27       1.36 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_4/CO (ADDFX1)
+                                                          0.27       1.63 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_5/CO (ADDFX1)
+                                                          0.27       1.90 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_6/CO (ADDFX1)
+                                                          0.27       2.16 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_7/CO (ADDFX1)
+                                                          0.27       2.43 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_8/CO (ADDFX1)
+                                                          0.27       2.70 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_9/CO (ADDFX1)
+                                                          0.27       2.96 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_10/CO (ADDFX1)
+                                                          0.27       3.23 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_11/CO (ADDFX1)
+                                                          0.27       3.50 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_12/CO (ADDFX1)
+                                                          0.27       3.77 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_13/CO (ADDFX1)
+                                                          0.27       4.03 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_14/CO (ADDFX1)
+                                                          0.27       4.30 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_15/CO (ADDFX1)
+                                                          0.27       4.57 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_16/CO (ADDFX1)
+                                                          0.27       4.84 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_17/CO (ADDFX1)
+                                                          0.27       5.10 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_18/CO (ADDFX1)
+                                                          0.27       5.37 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_19/CO (ADDFX1)
+                                                          0.27       5.64 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_20/CO (ADDFX1)
+                                                          0.27       5.91 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_21/CO (ADDFX1)
+                                                          0.27       6.17 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_22/CO (ADDFX1)
+                                                          0.27       6.44 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_23/CO (ADDFX1)
+                                                          0.27       6.71 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_24/CO (ADDFX1)
+                                                          0.27       6.98 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_25/CO (ADDFX1)
+                                                          0.27       7.24 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_26/CO (ADDFX1)
+                                                          0.27       7.51 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_27/CO (ADDFX1)
+                                                          0.27       7.78 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_28/CO (ADDFX1)
+                                                          0.27       8.05 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_29/CO (ADDFX1)
+                                                          0.27       8.31 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_30/CO (ADDFX1)
+                                                          0.27       8.58 f
+  adder_tree1/add_1_root_add_0_root_add_32_2/U1_31/Y (XOR3XL)
+                                                          0.26       8.84 r
+  adder_tree1/add_1_root_add_0_root_add_32_2/SUM[31] (Adder_tree_0_DW01_add_7)
+                                                          0.00       8.84 r
+  adder_tree1/add_0_root_add_0_root_add_32_2/B[31] (Adder_tree_0_DW01_add_6)
+                                                          0.00       8.84 r
+  adder_tree1/add_0_root_add_0_root_add_32_2/U1_31/Y (XOR3XL)
+                                                          0.40       9.24 f
+  adder_tree1/add_0_root_add_0_root_add_32_2/SUM[31] (Adder_tree_0_DW01_add_6)
+                                                          0.00       9.24 f
+  adder_tree1/total_reg[31]/D (DFFQXL)                    0.00       9.24 f
+  data arrival time                                                  9.24
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  adder_tree1/total_reg[31]/CK (DFFQXL)                   0.00      10.00 r
+  library setup time                                     -0.11       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
